@@ -3,6 +3,6 @@ numpy
 folium
 matplotlib
 seaborn
-sklearn
+scikit-learn
 regex
 networkx
