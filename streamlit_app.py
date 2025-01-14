@@ -15,8 +15,8 @@ st.write('Diego Arturo González Juárez')
 st.write('Stanislaw Zapala')
 
  # Read Data
-hotels_df = pd.read_csv('data\\hotels_v1.csv')
-attractions_df = pd.read_csv('data\\data_attractions_v5.csv')
+hotels_df = pd.read_csv('data/hotels_v1.csv')
+attractions_df = pd.read_csv('data/data_attractions_v5.csv')
 
 hotels_df['centrality'] = hotels_df.apply(lambda row: '⭐'*row.distance_score, axis= 1)
 hotels_df = hotels_df.sort_values(by= ['total_distance'], ascending=True, ignore_index= True)
