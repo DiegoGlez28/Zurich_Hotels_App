@@ -1,0 +1,8 @@
+pandas 
+numpy 
+folium
+matplotlib
+seaborn
+sklearn
+regex
+networkx
