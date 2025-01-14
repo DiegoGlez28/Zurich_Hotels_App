@@ -17,8 +17,8 @@ from sklearn.datasets import make_blobs
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
 
-df_raw = pd.read_csv('data\\ZurichHotels.csv')
-df = pd.read_csv('data\\zurich_hotels_coordinates.csv')
+df_raw = pd.read_csv('data/ZurichHotels.csv')
+df = pd.read_csv('data/zurich_hotels_coordinates.csv')
 hotels_url = 'https://www.hometogo.ch/'
 buf = io.StringIO()
 
@@ -235,7 +235,7 @@ tree_plot = tree.plot_tree(clf,
 '''
 
 st.code(code8, line_numbers= True)
-st.image('images\\classification_tree.png')
+st.image('images/classification_tree.png')
 #st.pyplot(fig)
 
 #y_pred = clf.predict(X_test)
@@ -306,4 +306,4 @@ plt.scatter(X[:, 0], X[:, 1], c=y2, s=10)
 plt.show()'''
 
 st.code(code11, line_numbers= True)
-st.image('images\\clusters_scatter.png')
+st.image('images/clusters_scatter.png')
