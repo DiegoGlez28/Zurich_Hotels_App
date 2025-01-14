@@ -4,9 +4,9 @@ import pandas as pd
 from streamlit_folium import st_folium
 import networkx as nx
 
-df_att = pd.read_csv('data\\data_attractions_v5.csv')
-df_h = pd.read_csv('data\\hotels_v1.csv')
-h_df = pd.read_csv('data\\hotels_with_total_distances.csv')
+df_att = pd.read_csv('data/data_attractions_v5.csv')
+df_h = pd.read_csv('data/hotels_v1.csv')
+h_df = pd.read_csv('data/hotels_with_total_distances.csv')
 selection_index = st.session_state.index
 selected_hotel = df_h.loc[selection_index]
 lat = selected_hotel['Latitude']
