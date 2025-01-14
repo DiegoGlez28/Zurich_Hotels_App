@@ -18,8 +18,8 @@ from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
 import regex as re
 
-df_att = pd.read_csv('data\\data_attractions.csv')
-df_att_fin = pd.read_csv('data\\data_attractions_v5.csv')
+df_att = pd.read_csv('data/data_attractions.csv')
+df_att_fin = pd.read_csv('data/data_attractions_v5.csv')
 url = 'https://opendata.swiss/de/dataset/sehenswurdigkeiten-in-der-region-zurich-zurich-tourismus'
 
 st.write('# Analysis of attractions data')
